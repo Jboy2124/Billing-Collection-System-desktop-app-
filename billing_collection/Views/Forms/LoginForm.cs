@@ -28,5 +28,12 @@ namespace billing_collection.Views.Forms
         {
             MessageBox.Show(message);
         }
+
+        public void IsAccessGranted()
+        {
+            MainForm main = new MainForm();
+            this.Hide();
+            main.Show();
+        }
     }
 }

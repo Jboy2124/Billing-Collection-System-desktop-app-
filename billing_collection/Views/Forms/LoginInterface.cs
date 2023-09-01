@@ -12,6 +12,7 @@ namespace billing_collection.Views.Forms
         string Username { get; }
         string Password { get; }
         void ErrorMessage(string message);
+        void IsAccessGranted();
 
     }
 }

@@ -29,7 +29,7 @@ namespace billing_collection.Presenters
                 bool access = await _repo.Authentication(user, password);
                 if (access)
                 {
-                    _view.ErrorMessage("Access Granted");
+                    _view.IsAccessGranted();
                 }
                 else {
                     _view.ErrorMessage("Access Denied");
